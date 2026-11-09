@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stddef.h>
 
+#define HIGH_TEMP_LIMIT_C 28.0f
+
 int main(void)
 {
     const float readings[] = {
@@ -37,6 +39,15 @@ int main(void)
     printf("Minimum: %.1f C\n", min_temp);
     printf("Maximum: %.1f C\n", max_temp);
     printf("Average: %.1f C\n", sum / (float)count);
+
+    if (max_temp >= HIGH_TEMP_LIMIT_C)
+    {
+        printf("WARNING: High temperature detected!\n");
+    }
+    else
+    {
+        printf("Temperature within normal range.\n");
+    }
 
     return 0;
 }
