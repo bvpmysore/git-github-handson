@@ -42,7 +42,10 @@ int main(void)
 
     if (max_temp >= HIGH_TEMP_LIMIT_C)
     {
-        printf("WARNING: High temperature detected!\n");
+        printf("WARNING: maximum temperature %.1f C "
+       "reached/exceeded limit %.1f C\n",
+       max_temp,
+       HIGH_TEMP_LIMIT_C);
     }
     else
     {
