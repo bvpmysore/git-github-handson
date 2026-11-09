@@ -1,11 +1,25 @@
-# Git and GitHub Hands-on
+# Git and GitHub Hands-on Lab
 
-This repository is for learning Git and GitHub.
+A sample C application for learning Git and GitHub.
 
-## Topics
-- Git basics
-- Branching
-- Commit and Push
-- Pull Requests
-- Merge and Rebase
-- Patch files
+## Project
+
+Temperature Sensor Monitor
+
+## Features
+
+- Minimum temperature calculation
+- Maximum temperature calculation
+- Average temperature calculation
+
+## Build
+
+make
+
+## Run
+
+./sensor_monitor
+
+## Clean
+
+make clean
